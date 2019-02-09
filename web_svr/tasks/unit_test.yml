@@ -14,7 +14,7 @@
     register: result_proc
 
   - name: Is httpd service enabled?
-    shell: systemctl is-enabled httpd
+    shell: service httpd status
     register: result_enabled
 
   - name: Is port 80 opened?
